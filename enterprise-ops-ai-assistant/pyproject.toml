@@ -4,9 +4,16 @@ version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
     "jsonpatch==1.33",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
     "langchain-core>=1.5.3",
+    "langchain-huggingface>=1.2.2",
     "langchain-openai>=1.4.2",
+    "langchain-text-splitters>=1.1.2",
+    "pypdf>=6.15.0",
     "python-dotenv>=1.2.2",
+    "reportlab>=5.0.0",
+    "sentence-transformers>=5.7.0",
     "streamlit>=1.61.1",
 ]
 
