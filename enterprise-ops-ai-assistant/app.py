@@ -124,10 +124,10 @@ try:
     llm_status = True
     kb_status = True
 
-except Exception:
+except Exception as e:
 
-    llm_status = False
-    kb_status = False
+    st.error(f"Backend initialization failed: {e}")
+    st.stop()
 
 
 # ============================================================
