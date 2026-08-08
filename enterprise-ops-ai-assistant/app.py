@@ -62,7 +62,9 @@ def initialize_backend():
     # Load company documents
     # --------------------------------------------------------
 
-    documents_path = "documents"
+    from pathlib import Path
+
+    documents_path = Path(__file__).resolve().parent / "documents"
 
     all_documents = []
 
@@ -76,7 +78,7 @@ def initialize_backend():
     for filename in pdf_files:
 
         loader = PyPDFLoader(
-            os.path.join(documents_path, filename)
+            str(documents_path / filename)
         )
 
         all_documents.extend(loader.load())
